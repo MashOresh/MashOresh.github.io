@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Мария Орешкина - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   
    <header>
+      <nav>
        <div class = "logo">Мария Орешкина</div>
        <div class = "menu">
-           <a href="">Обо мне</a>
-           <a href="">Услуги</a>
-           <a href="">Кейсы</a>
-           <a href="">Прайс</a>
-           <a href="">Отзывы</a>
-           <a href="">Контакты</a>
-       </div>
+          <ul>
+           <li>Обо мне</li>
+           <li>Услуги</li>
+           <li>Кейсы</li>
+           <li>Прайс</li>
+           <li>Отзывы</li>
+           <li>Контакты</li>
+           </ul></div>
+       </nav>
    </header>
    
    <div class = "main"> <div class = "title__container">
@@ -29,48 +34,55 @@
    <div class = "about">
        <h2>Обо мне</h2>
        
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim expedita repellat dolorem quibusdam, ut voluptates eius, sed quisquam consequuntur! <br>Excepturi nemo, provident velit praesentium, veritatis illo laborum in? Velit?</p>
+       <p class = "about1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim expedita repellat dolorem quibusdam, ut voluptates eius,<br> sed quisquam consequuntur! Excepturi nemo, provident velit praesentium, veritatis illo laborum in? Velit?</p>
        
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, impedit facilis corporis consequuntur reiciendis nisi quibusdam accusamus iure, earum voluptate <br>maxime, nesciunt alias quis ea voluptates consequatur dolor atque sit.</p>
+       <p class = "about2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, impedit facilis corporis consequuntur reiciendis nisi <br>quibusdam accusamus iure, earum voluptate maxime, nesciunt alias quis ea voluptates consequatur dolor atque sit.</p>
        
        <input type = "submit" value="Скачать резюме">
    </div>
    
    <div class = "ability">
-       <h2>Что  умею</h2>
-       <span>Веб-дизайн</span>
-       <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. <br> Tempore, dolor.</p>
+       <h2>Что я умею</h2>
        
-       <span>Разработка</span>
-       <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Maxime, quae.</p>
+       <img id = "laptop" src="../src/img/laptop.png" alt="">
+       <img id = "znak" src="../src/img/znak.png" alt="">
+       <img id = "raketa" src="../src/img/raketa.png" alt="">
+       <img id = "market" src="../src/img/marketing.png" alt="">
        
-       <span>CEO-Оптимизация</span>
-       <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Provident, doloremque.</p>
+       <h3 id = "web">Веб-дизайн</h3>
+       <h3 id = "develop">Разработка</h3>
+       <h3 id = "optimize">CEO-Оптимизация</h3>
+       <h3 id = "marketing">Маркетинг</h3>
        
-       <span>Маркетинг</span>
-       <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Mollitia, beatae.</p>
+       <p id = "web_text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. <br> Tempore, dolor.</p>
+       <p id = "develop_text">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Maxime, quae.</p>
+       <p id = "optimize_text">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Provident, doloremque.</p>
+       <p id = "marketing_text">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Mollitia, beatae.</p>
+       
+       
+       
    </div>
    
    <div class = "case">
        <h2>Кейсы</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, vero.</p>
+       <p id = "case_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, vero.</p>
        
-       <h2><b>Client</b></h2>
-       <span>Название компании</span>
+       <h3 id="client"><b>Client:</b></h3>
+       <p id="name_company">Название компании </p>
        
-       <h2><b>Website</b></h2>
+       <h3 id = "website"><b>Website:</b></h3>
        <a href="">http://www.somedomain.com</a><br>
        
        <input type = "submit" value = "VISIT LIVE SITE">
        
-       <h2><b>Название проекта</b></h2>
+       <h3><b>Название проекта</b></h3>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic, omnis id debitis eveniet perspiciatis error labore quo consectetur modi <br>voluptatem voluptatum animi, at, itaque assumenda aspernatur. Rem praesentium, omnis atque, illo nostrum assumenda nam autem, est perferendis <br> dolorum distinctio soluta dolorem debitis fugiat. Sequi architecto, obcaecati repudiandae tenetur? Ipsum.</p>
    </div>
    
    <div class = "price">
        <h2><b>Расчет стоимости</b></h2>
        
-       <h4><b>ТИП САЙТА</b></h4>
+       <h4 id = "type"><b>ТИП САЙТА</b></h4>
        <select name = "type_of_site">
            <option value = "Option1">Выберите пункт</option>
            <option value = "Option2">Сайт-визитка</option>
@@ -78,7 +90,7 @@
            <option value = "Option4">Интернет-магазин</option>
        </select>
        
-       <h4><b>ДИЗАЙН</b></h4>
+       <h4 id = "design"><b>ДИЗАЙН</b></h4>
        <select name = "design">
            <option value = "Option1">Выберите пункт</option>
            <option value = "Option2">Шаблонный</option>
@@ -86,7 +98,7 @@
            <option value = "Option4">WOW-Дизайн</option>
        </select>
        
-       <h4><b>АДАПТИВНОСТЬ</b></h4>
+       <h4 id = "adapt"><b>АДАПТИВНОСТЬ</b></h4>
        <select name = "adaptability">
            <option value = "Option1">Выберите пункт</option>
            <option value = "Option2">Только ПК</option>
@@ -103,30 +115,31 @@
    </div>
    
    <div class = "statistics">
-       <h2><b>Немного статистики</b></h2>
+       <h2>Немного статистики</h2>
        
-       <p><big><b>0</b></big><br>счастливых клиентов</p>
-       <p><big><b>0</b></big><br>часов работы</p>
-       <p><big><b>0</b></big><br>проектов завершено</p>
-       <p><big><b>0</b></big><br>наград получено</p>
+       <p id = "num_clients"><big><b>0</b></big><br>счастливых клиентов</p>
+       <p id = "num_hours"><big><b>0</b></big><br>часов работы</p>
+       <p id = "num_projects"><big><b>0</b></big><br>проектов завершено</p>
+       <p id = "num_prizes"><big><b>0</b></big><br>наград получено</p>
    </div>
    
    <div class = "feedback">
-       <h2><b>Отзывы</b></h2>
+       <h2>Отзывы</h2>
        
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores enim, eveniet natus nam fuga <br> culpa laudantium quaerat perspiciatis, maxime magnam laborum eos dolore dolores doloremque libero excepturi error! Repudiandae officia <br> dolorem, pariatur incidunt! Distinctio, numquam, vel! Blanditiis natus vel dolore qui, deserunt odio quo beatae harum recusandae fuga tenetur.</p>
+       <p id = "feedback_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores enim, eveniet natus nam fuga <br> culpa laudantium quaerat perspiciatis, maxime magnam laborum eos dolore dolores doloremque libero excepturi error! </p>
        
-       <span><b>Михаил, </b> ген.директор ПАО "Газпром".</span>
+       <p id = "feedback_author"><b>Михаил, </b> ген.директор ПАО "Газпром".</p>
    </div>
    
    <div class = "my_contact">
+       <h2>Мои контакты</h2>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, sunt!</p>
        
-       <span>Нижегородская область, <br> г. Саров</span><br>
+       <p>Нижегородская область, <br> г. Саров</p>
        <a href="">m.oreshkina99@yandex.ru</a><br>
-       <span>+7(123)456-78-90</span><br>
+       <p>+7(123)456-78-90</p>
        
-       <h2>Оставьте мне сообщение</h2>
+       <h3>Оставьте мне сообщение</h3>
        <input type = "text" name = "input_name" placeholder = "Имя" >
        <input type = "text" name = "input_email" placeholder = "Email" ><br>
        <textarea name = "input_sms" id = "1" placeholder = "Введите ваше сообщение" ></textarea><br>
