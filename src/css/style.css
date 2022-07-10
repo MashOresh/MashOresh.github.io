@@ -67,24 +67,32 @@ nav{
     margin: 58px 14px 0px 14px;
     
 }
+
 .about{
     height: 720px;
     text-align: center;
-    color: black;
-    background: url(../img/line.png) 50% 161px/auto 0.4% no-repeat, url(../img/foto1.png) 50% 47%/auto 30% no-repeat;
+    background: url(../img/foto1.png) 50% 47%/auto 30% no-repeat;
 }
 
 .about>h2{
     font-size: 35px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 108px;
+    padding: 108px 0px 32px 0px;
     color: #2f2167;
+}
+
+.about hr{
+    height: 4px;
+    border: none;
+    background: #ff1e97;
+    width: 80px;
+    margin: 0px auto 100px;
 }
 
 .about1{
     font-size: 15px;
-    padding-top: 320px;
+    padding-top: 200px;
 }
 
 .about2{
@@ -96,7 +104,7 @@ nav{
     margin: 40px;
     height: 32px;
     text-align: center;
-    border: 2px solid #2f2167;
+    border: 2px solid ;
     background: none;
     border-radius: 5px;
     color:#2f2167;
@@ -104,207 +112,422 @@ nav{
     padding: 0px 16px;
 }
 
-.ability{
-    height: 525px;
+.skills{
+    background: url(../img/background2.png) center/cover no-repeat;
+    height: 550px;
+    padding-bottom: 96px;
 }
 
-.ability>h2{
-    font-size: 35px;
+.skills h2{
     text-align: center;
+    width: 214px;
+    font-size: 33px;
+    margin: 0px auto 30px;
+    padding-top: 110px;
+    padding-bottom: 5px;
     text-transform: uppercase;
-    padding-top: 104px;
     color: #2f2167;
 }
 
-.ability>img{
-    display: block;
-    float: left; 
+.skills hr{
+    height: 4px;
+    border: none;
+    background: #ff1e97;
+    width: 80px;
+    margin: 0 auto 100px;
 }
 
-#laptop{
-    padding: 150px 0px 0px 475px;
-}
-
-#znak{
-    padding: 150px 0px 0px 230px;
-}
-
-#raketa{
-    padding: 150px 0px 0px 246px;
-}
-
-#market{
-    padding: 150px 0px 0px 245px;
-}
-
-#web{
+.skills>div{
     float: left;
-    padding: 220px 400px 0px 0px;
+    width: 213px;
+    text-align: center;
+    padding-top: 25px;
+    margin-right: 85px;
 }
 
-#develop{
-    float:left;
-    padding: 150px 0px 0px 199px;
+.web{
+    margin-left: 417px;
 }
 
-#optimize{
-    float:left;
-    padding: 150px 0px 0px 199px;
+.develop{
+    margin-top: -5px;
 }
 
-#marketing{
-    float:left;
-    padding: 150px 0px 0px 199px;
+.CEO{
+    margin-top: -12px;
 }
 
-.ability>p{
-    float: left;
-    margin-left: 145px; 
+.Market{
+    margin-top: -10px;
+}
+
+.skills>div>h4{
+    font-size: 19px;
+    color: #ff1e97;
+    margin-top: 39px;
+}
+
+.skills>div>p{
+    font-size: 14px;
+    color: #000;
+    margin-top: 22px;
 }
 
 .case{
-    height: 1180px;
-    background: url(../img/line.png) 50% 161px/auto 0.25% no-repeat, url(../img/site.png) 10% 70%/auto 70% no-repeat;
+    padding-top: 110px;
+    padding-bottom: 200px;
+    width: 1570px;
 }
 
-.case>h2{
-    font-size: 35px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 108px;
+.case_container h2{
+    font-size: 33px;
     color: #2f2167;
-}
-
-#case_text{
-    font-size: 15px;
-    text-align: center;
-    padding-top: 75px;
-}
-
-#client{
-    font-size: 20px;
+    margin: 0px 0px 30px 913px;
+    padding-bottom: 5px;
     text-transform: uppercase;
-    padding:600px 0px 0px 425px; 
 }
 
-#name_company{
-    font-size: 15px;
-    padding: 10px 0px 0px 425px; 
+.case_container hr{
+    height: 4px;
+    border: none;
+    background: #ff1e97;
+    width: 80px;
+    margin: 0 0px 40px 930px;
 }
 
-#website{
-    font-size: 20px;
+.case_container p{
+    margin: 0 0px 40px 550px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.case_container img{
+    margin-bottom: 40px;
+}
+
+.description_left{
+    width: 200px;
+    float: left;
+    margin-right: 82px;
+    margin-left: 390px;
+    margin-top: -250px;
+}
+
+.description_left h3{
+    font-size: 25px;
     text-transform: uppercase;
-    padding: 10px 0px 0px 425px;
 }
 
-.case>a{
+.description_left p{
+    font-size: 17px;
+    margin: 16px 0px;
+}
+
+.description_left input{
+    margin-top: 25px;
     display: block;
-    font-size: 15px;
-    padding: 10px 0px 0px 425px;
-}
-
-.case input{
-    height: 40px;
-    text-align: center;
-    border: 2px solid #2f2167;
+    width: 100%;
     background: #2f2167;
-    border-radius: 5px;
-    color:#fff;
-    font-size: 13px;
-    padding: 0px 16px;
-    margin: 10px 0px 0px 425px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
 }
 
-#project_name{
-    font-size: 35px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 108px;
-    color: #2f2167;
+.description_left a{
+    display: block;
+    margin-top: 10px;
+}
+
+.description_right h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: -250px;
+    margin-left: 673px;
+}
+
+.description_right p{
+    font-size: 20px;
+    margin-left: 675px;
 }
 
 .price{
-    width: 100%;
-    font-size: 35px;
-    color: #000;
+    width: 1080px;
+    height: 800px;
+    padding-top: 74px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    margin: 0 auto;
 }
 
-.price>h2{
+.price h2{
     text-align: center;
+    font-size: 35px;
+    margin: 0 auto 50px;
+    font-weight: 700;
 }
 
-.price h4{
+.price div{
+    margin-left: 85px;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.price > div > h4{
+    font-weight: 500;
+    word-spacing: 12px;
+}
+
+.price div > select{
+    width: 893px;
+    border: 1px solid #e1e1e1;
+    background: #e1e1e1;
+    height: 57px;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 40px;
     font-size: 20px;
-    padding: 15px 0px 0px 495px;
 }
 
-.price select{
-    display: block;
-    border: 2px solid #c0c0c0;
-    height: 50px;
-    width: 890px;
-    background: #c0c0c0;
-    color:#fff;
-    font-size: 15px;
-    padding: 0px 16px;
-    margin: 15px 0px 30px 495px;
+.price hr{
+    height: 2px;
+    border: none;
+    background: #e1e1e1;
+    width: 893px;
+    margin: 0px 0px 24px 85px;
 }
 
-.price>p{
-    font-size: 20px;
-    padding: 15px 0px 20px 880px;
+.price_info>div{
+    float: left;
+}
+
+.price_info .info{
+    margin-left: 0px;
+    font-size: 21px;
+}
+
+.price_info .digit{
+    float: right;
+    margin-right: 100px;
+    font-size: 21px;
 }
 
 .statistics{
+    margin-top: 100px;
+    background: url(../img/background_stat.png) center/cover no-repeat;
+    padding-bottom: 96px;
     height: 495px;
-    width: 100%;
-    background: url(../img/Line.png) 50% 161px/auto 0.6% no-repeat, url(../img/background_stat.png) center/cover no-repeat;
 }
 
-.statistics>h2{
-    font-size: 35px;
-    color: #2f2167;
+.statistics h2{
     text-align: center;
+    color: #2f2167;
+    font-size: 33px;
+    padding-top: 90px;
+    padding-bottom: 35px;
     text-transform: uppercase;
-    padding-top: 105px;
-    font-size: 35px;
+}
+
+.statistics hr{
+    height: 4px;
+    border: none;
+    background: #ff1e97;
+    width: 80px;
+    margin: 0 auto 100px;
+}
+
+.statistics>div{
+    float: left;
+    width: 213px;
+    text-align: center;
+    padding-top: 25px;
+    margin-right: 85px;
+}
+
+.num_clients{
+    margin-left: 400px;
+}
+
+.num_prizes{
+    margin-top: -5px;
+}
+
+.statistics>div>h3{
+    padding-top: 34px;
+    font-size: 33px;
+    font-weight: 700;
+    padding-bottom: 30px; 
+}
+
+.statistics>div>p{
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 .feedback{
-    height: 570px;
-    width: 100%;
-    background: url(../img/man.png) 50% 50%/auto 25% no-repeat, url(../img/Line.png) 50% 161px/auto 0.5% no-repeat
+    padding-top: 100px;
 }
 
-.feedback h2{
-    font-size: 35px;
-    color: #2f2167;
+.feedback_container{
     text-align: center;
-    padding-top: 108px;
 }
 
-#feedback_text{
-    font-size: 16px;
-    color: #000;
-    padding: 250px 0px 50px 612px;
+.feedback_container h2{
+    font-size: 33px;
+    color: #2f2167;
+    text-transform: uppercase;
+    padding-bottom: 35px;
 }
 
-#feedback_author{
-    font-size: 16px;
-    color: #000;
-    padding: 10px 0px 0px 812px;
+.feedback_container hr{
+    height: 4px;
+    border: none;
+    background: #ff1e97;
+    width: 80px;
+    margin: 0px auto 60px;
+}
+
+.feedback p{
+    padding-top: 35px;
+    text-align: center;
+    font-size: 20px;
+    width: 695px;
+    margin-left: 615px;
+}
+
+.points{
+    padding-top: 50px;
+    margin-left: 930px;
 }
 
 .my_contact{
-    height: 710px;
-    width: 100%;
-    background: url(../img/Line.png) 50% 161px/auto 0.45% no-repeat, url(../img/contanct.png) center/cover no-repeat;
+    margin-top: 92px;
+    height: 807px;
+    background: url(../img/background3.png) center/cover no-repeat;
 }
 
-.my_contact h2{
-    font-size: 35px;
+.contact_container{
+    text-align: center;
+}
+
+.contact_container h2{
+    font-size: 33px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 105px;
+    padding-bottom: 30px;
+}
+
+.contact_container hr{
+    height: 4px;
+    border: none;
+    background: #ff1e97;
+    width: 80px;
+    margin: 0px auto 30px;
+}
+
+.contact_container p{
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact_info>div{
+    padding-top: 45px;
+    float: left;
+    width: 213px;
+    text-align: center;
+    padding-top: 45px;
+    margin-right: 85px;
+}
+
+.contact_info p{
+    color: #fff;
+}
+
+.contact_info a{
+    color: #fff;
+}
+
+.place{
+    margin-left: 550px;
+}
+
+.contact_info img{
+    margin-bottom: 15px;
+}
+
+.mail a{
+    display: block;
+    margin-top: 10px;
+}
+
+.text_to_me h4{
+    margin-top: 180px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.input_text{
+    display: block;
+    float: left;
+    margin-top: 45px;
+    margin-left: 590px;
+}
+
+#input_name{
+    display: block;
+    float: left;
+    width: 355px;
+    margin-right: 30px;
+    height: 35px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#input_email{
+    display: block;
+    float: left;
+    width: 355px;
+    height: 35px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#input_sms{
+    display: block;
+    height: 95px;
+    width: 740px;
+    font-size: 16px;
+}
+
+#button{
+    display: block;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    height: 46px;
+    width: 124px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 220px;
+    margin-left: 890px;
+}
+
+.footer{
+    background: #2f2167;
+    height: 94px;
+}
+
+.footer p{
     color: #fff;
     text-align: center;
-    padding-top: 108px;
+    font-size: 16px;
+    padding-top: 40px;
 }

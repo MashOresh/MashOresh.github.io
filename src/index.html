@@ -33,7 +33,7 @@
    
    <div class = "about">
        <h2>Обо мне</h2>
-       
+       <hr>
        <p class = "about1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim expedita repellat dolorem quibusdam, ut voluptates eius,<br> sed quisquam consequuntur! Excepturi nemo, provident velit praesentium, veritatis illo laborum in? Velit?</p>
        
        <p class = "about2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, impedit facilis corporis consequuntur reiciendis nisi <br>quibusdam accusamus iure, earum voluptate maxime, nesciunt alias quis ea voluptates consequatur dolor atque sit.</p>
@@ -41,113 +41,203 @@
        <input type = "submit" value="Скачать резюме">
    </div>
    
-   <div class = "ability">
-       <h2>Что я умею</h2>
-       
-       <img id = "laptop" src="../src/img/laptop.png" alt="">
-       <img id = "znak" src="../src/img/znak.png" alt="">
-       <img id = "raketa" src="../src/img/raketa.png" alt="">
-       <img id = "market" src="../src/img/marketing.png" alt="">
-       
-       <h3 id = "web">Веб-дизайн</h3>
-       <h3 id = "develop">Разработка</h3>
-       <h3 id = "optimize">CEO-Оптимизация</h3>
-       <h3 id = "marketing">Маркетинг</h3>
-       
-       <p id = "web_text">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. <br> Tempore, dolor.</p>
-       <p id = "develop_text">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Maxime, quae.</p>
-       <p id = "optimize_text">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Provident, doloremque.</p>
-       <p id = "marketing_text">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Mollitia, beatae.</p>
-       
-       
-       
-   </div>
-   
+   <div class = "skills">
+      <h2>Что я умею</h2>
+      <hr>
+      
+      <div class = "web">
+          <img src="../src/img/laptop.png" alt="">
+          <h4>Веб-дизайн</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, rem!</p>
+      </div>
+      
+      <div  class = "develop">
+          <img src="../src/img/znak.png" alt="">
+          <h4>Разработка</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, rem!</p>
+      </div>
+      
+      <div class = "CEO">
+          <img src="../src/img/raketa.png" alt="">
+          <h4>СЕО-Оптимизация</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, rem!</p>
+      </div>
+      
+      <div class = "Market">
+          <img src="../src/img/marketing.png" alt="">
+          <h4>Маркетинг</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, rem!</p>
+      </div>
+      
+   </div>   
+
    <div class = "case">
-       <h2>Кейсы</h2>
-       <p id = "case_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, vero.</p>
+     
+      <div class = "case_container">
+           <h2>Кейсы</h2>
+           <hr>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum, accusamus quae doloremque ipsum laborum!</p>
+           <img src="../src/img/site.png" alt="">
+       </div>
        
-       <h3 id="client"><b>Client:</b></h3>
-       <p id="name_company">Название компании </p>
-       
-       <h3 id = "website"><b>Website:</b></h3>
-       <a href="">http://www.somedomain.com</a><br>
-       
-       <input type = "submit" value = "VISIT LIVE SITE">
-       
-       <h3><b>Название проекта</b></h3>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic, omnis id debitis eveniet perspiciatis error labore quo consectetur modi <br>voluptatem voluptatum animi, at, itaque assumenda aspernatur. Rem praesentium, omnis atque, illo nostrum assumenda nam autem, est perferendis <br> dolorum distinctio soluta dolorem debitis fugiat. Sequi architecto, obcaecati repudiandae tenetur? Ipsum.</p>
+       <div class = "description_left">
+           <h3 id="client">Client:</h3>
+           <p id="name_company">Название компании </p>
+
+           <h3 id = "website">Website:</h3>
+           <a href="">http://www.somedomain.com</a><br>
+
+           <input type = "submit" value = "VISIT LIVE SITE">
+      </div>
+          
+        <div class = "description_right">
+           <h3>Название проекта</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto hic, omnis id debitis eveniet perspiciatis error labore quo consectetur modi voluptatem voluptatum animi, at, itaque assumenda aspernatur. Rem praesentium, omnis atque, illo nostrum assumenda nam autem, est perferendis dolorum distinctio soluta dolorem debitis fugiat. Sequi architecto, obcaecati repudiandae tenetur? Ipsum.</p>
+       </div>
    </div>
-   
-   <div class = "price">
-       <h2><b>Расчет стоимости</b></h2>
+
+
+     <div class = "price">
+       <h2>Расчет стоимости</h2>
        
-       <h4 id = "type"><b>ТИП САЙТА</b></h4>
-       <select name = "type_of_site">
-           <option value = "Option1">Выберите пункт</option>
-           <option value = "Option2">Сайт-визитка</option>
-           <option value = "Option3">Корпоративный сайт</option>
-           <option value = "Option4">Интернет-магазин</option>
-       </select>
+       <div>
+           <h4 id = "type">Тип сайта</h4>
+           <select name = "type_of_site">
+               <option value = "Option1">Выберите пункт</option>
+               <option value = "Option2">Сайт-визитка</option>
+               <option value = "Option3">Корпоративный сайт</option>
+               <option value = "Option4">Интернет-магазин</option>
+           </select>
+       </div>
        
-       <h4 id = "design"><b>ДИЗАЙН</b></h4>
-       <select name = "design">
-           <option value = "Option1">Выберите пункт</option>
-           <option value = "Option2">Шаблонный</option>
-           <option value = "Option3">Уникальный</option>
-           <option value = "Option4">WOW-Дизайн</option>
-       </select>
+       <div>
+           <h4 id = "design">Дизайн</h4>
+           <select name = "design">
+               <option value = "Option1">Выберите пункт</option>
+               <option value = "Option2">Шаблонный</option>
+               <option value = "Option3">Уникальный</option>
+               <option value = "Option4">WOW-Дизайн</option>
+           </select>
+       </div>
        
-       <h4 id = "adapt"><b>АДАПТИВНОСТЬ</b></h4>
-       <select name = "adaptability">
-           <option value = "Option1">Выберите пункт</option>
-           <option value = "Option2">Только ПК</option>
-           <option value = "Option3">Только мобильный сайт</option>
-           <option value = "Option4">ПК + Мобильный</option>
-       </select>
+       <div>
+           <h4 id = "adapt">Адаптивность</h4>
+           <select name = "adaptability">
+               <option value = "Option1">Выберите пункт</option>
+               <option value = "Option2">Только ПК</option>
+               <option value = "Option3">Только мобильный сайт</option>
+               <option value = "Option4">ПК + Мобильный</option>
+           </select>
+       </div>
        
-        <h4>Сроки</h4>
-        <p>0</p>
-        
-        <h4>Стоимость</h4>
-        <p>0</p>
+       <hr>
        
+       <div class = "price_info">
+           <div class = "info">
+                <h4>Сроки</h4>
+                <h4>Стоимость</h4>
+            </div>
+            
+            <div class = "digit">
+                <p>0</p>
+                <p>0</p>
+            </div>
+            
+       </div>
    </div>
    
    <div class = "statistics">
        <h2>Немного статистики</h2>
+       <hr>
        
-       <p id = "num_clients"><big><b>0</b></big><br>счастливых клиентов</p>
-       <p id = "num_hours"><big><b>0</b></big><br>часов работы</p>
-       <p id = "num_projects"><big><b>0</b></big><br>проектов завершено</p>
-       <p id = "num_prizes"><big><b>0</b></big><br>наград получено</p>
+       <div class = "num_clients">
+            <img src="../src/img/smile.png" alt="">
+           <h3>0</h3>
+           <p>счастливых клиентов</p>
+       </div>
+       
+       <div>
+            <img src="../src/img/braces.png" alt="">
+           <h3>0</h3>
+           <p>часов работы</p>
+       </div>
+       
+       <div>
+            <img src="../src/img/tick.png" alt="">
+           <h3>0</h3>
+           <p> завершенных проектов</p>
+       </div>
+       
+       <div class = "num_prizes">
+            <img src="../src/img/cup.png" alt="">
+           <h3>0</h3>
+           <p>наград получено</p>
+       </div>
    </div>
    
    <div class = "feedback">
-       <h2>Отзывы</h2>
+      <div class = "feedback_container">
+           <h2>Отзывы</h2>
+           <hr>
+           <img src="../src/img/man.png" alt="">
+       </div>
        
-       <p id = "feedback_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores enim, eveniet natus nam fuga <br> culpa laudantium quaerat perspiciatis, maxime magnam laborum eos dolore dolores doloremque libero excepturi error! </p>
+       <p id = "feedback_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores enim, eveniet natus nam fuga culpa laudantium quaerat perspiciatis, maxime magnam laborum eos dolore dolores doloremque libero excepturi error! </p>
        
        <p id = "feedback_author"><b>Михаил, </b> ген.директор ПАО "Газпром".</p>
+       
+       <div class = "points">
+           <img src="../src/img/point1.png" alt="">
+           <img src="../src/img/point2.png" alt="">
+           <img src="../src/img/point2.png" alt="">
+       </div>
    </div>
    
    <div class = "my_contact">
-       <h2>Мои контакты</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, sunt!</p>
+      <div class = "contact_container">
+           <h2>Мои контакты</h2>
+           <hr>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, sunt!</p>
+       </div>
        
-       <p>Нижегородская область, <br> г. Саров</p>
-       <a href="">m.oreshkina99@yandex.ru</a><br>
-       <p>+7(123)456-78-90</p>
+       <div class = "contact_info">
+           <div class = "place">
+              <img src="../src/img/here.png" alt="">
+               <p>Нижегородская область, <br> г. Саров</p>
+           </div>
+
+           <div class = "mail">
+               <img src="../src/img/mail.png" alt=""><br>
+               <a href="">m.oreshkina99@yandex.ru</a>
+           </div>
+
+           <div class = "phone">
+              <img src="../src/img/phone.png" alt="">
+               <p>+7(123)456-78-90</p>
+            </div>
+       </div>
        
-       <h3>Оставьте мне сообщение</h3>
-       <input type = "text" name = "input_name" placeholder = "Имя" >
-       <input type = "text" name = "input_email" placeholder = "Email" ><br>
-       <textarea name = "input_sms" id = "1" placeholder = "Введите ваше сообщение" ></textarea><br>
-       <input type = "submit" value = "Отправить">
+       <div class = "text_to_me">
+           <h4>Оставьте мне сообщение</h4>
+           
+           <div class = "input_text">
+               <input type = "text" id = "input_name" placeholder = "Имя" >
+               <input type = "text" id = "input_email" placeholder = "Email" ><br>
+               <textarea name = "text" id = "input_sms" placeholder = "Введите ваше сообщение" ></textarea><br>
+           </div>
+           
+           <input type = "submit"  id = "button" value = "Отправить">
+       </div>
+       
    </div>
    
-   <footer>
-       Copyright 2021 Мария Орешкина. Designed by Web
-   </footer>
+   <div class = "map">
+       <img src="../src/img/map.png" alt="">
+   </div>
+   
+   
+   <div class = "footer">
+        <p>Copyright 2021 Мария Орешкина. Designed by Web</p>
+   </div>
 </body>
 </html>
