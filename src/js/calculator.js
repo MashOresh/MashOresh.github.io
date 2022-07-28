@@ -2,8 +2,6 @@ let typeSite = [],
     typeDesign = [],
     typeAdaptivity = []; 
 
-let s, d, a;
-
 let totalPrice = 0,  /* Переменные для итоговой цены и сроков */
     numDays = 0;
 
@@ -26,23 +24,22 @@ let calculator = {
     count(site, design, adaptivity) {
         totalPrice = site[0] + design[0] + adaptivity[0];
         numDays = site[1] + design[1] + adaptivity[1];
-        alert("Стоимость: " + totalPrice + " Сроки: " + numDays + " дней");
+        alert("Стоимость: " + totalPrice + " Срок: " + numDays + " дней");
     },
 }
 
-function getAnswer(typeSite, typeDesign, typeAdaptivity) {
+function getAnswer() {
     /* Получаем тип сайта */
-    s =  prompt("Выберите тип сайта", "Сайт-визитка, Корпоративный сайт или Интернет-магазин");
-    if (s.toLowerCase() === arrSite[0].toLowerCase()) {
+    typeSite[0] =  prompt("Выберите тип сайта", "Сайт-визитка, Корпоративный сайт или Интернет-магазин");
+    if (typeSite[0].toLowerCase() === arrSite[0].toLowerCase()) {
         typeSite[0] = calculator.price[0][0];
         typeSite[1] = calculator.days[0][0];
 
-    } else if (s.toLowerCase() == arrSite[1].toLowerCase()) {
+    } else if (typeSite[0].toLowerCase() == arrSite[1].toLowerCase()) {
         typeSite[0] = calculator.price[0][1];
         typeSite[1] = calculator.days[0][1];
 
-    } else if (s.toLowerCase() == arrSite[2].toLowerCase()) {
-
+    } else if (typeSite[0].toLowerCase() == arrSite[2].toLowerCase()) {
         typeSite[0] = calculator.price[0][2];
         typeSite[1] = calculator.days[0][2];
 
@@ -53,16 +50,16 @@ function getAnswer(typeSite, typeDesign, typeAdaptivity) {
     }
 
     /* Получаем тип дизайна */
-    d = prompt("Выберите тип дизайна", "Шаблонный, Уникальный или WOW-дизайн");
-    if (d.toLowerCase() == arrDesign[0].toLowerCase()) {
+    typeDesign[0] = prompt("Выберите тип дизайна", "Шаблонный, Уникальный или WOW-дизайн");
+    if (typeDesign[0].toLowerCase() == arrDesign[0].toLowerCase()) {
         typeDesign[0] = calculator.price[1][0];
         typeDesign[1] = calculator.days[1][0];
 
-    } else if (d.toLowerCase() == arrDesign[1].toLowerCase()) {
+    } else if (typeDesign[0].toLowerCase() == arrDesign[1].toLowerCase()) {
         typeDesign[0] = calculator.price[1][1];
         typeDesign[1] = calculator.days[1][1];
 
-    } else if (d.toLowerCase() == arrDesign[2].toLowerCase()) {
+    } else if (typeDesign[0].toLowerCase() == arrDesign[2].toLowerCase()) {
         typeDesign[0] = calculator.price[1][2];
         typeDesign[1] = calculator.days[1][2];
         
@@ -73,18 +70,18 @@ function getAnswer(typeSite, typeDesign, typeAdaptivity) {
     }
 
     /* Получаем тип адаптивности */
-    a = prompt("Выберите тип адаптивности", "ПК, Мобильная версия или ПК+Мобильная");
-    if (a.toLowerCase() == arrAdaptivity[0].toLowerCase()) {
-        typeAdaptivity[0] = calculator.price[1][0];
-        typeAdaptivity[1] = calculator.days[1][0];
+    typeAdaptivity[0] = prompt("Выберите тип адаптивности", "ПК, Мобильная версия или ПК+Мобильная");
+    if (typeAdaptivity[0].toLowerCase() == arrAdaptivity[0].toLowerCase()) {
+        typeAdaptivity[0] = calculator.price[2][0];
+        typeAdaptivity[1] = calculator.days[2][0];
 
-    } else if (a.toLowerCase() == arrAdaptivity[1].toLowerCase()) {
-        typeAdaptivity[0] = calculator.price[1][1];
-        typeAdaptivity[1] = calculator.days[1][1];
+    } else if (typeAdaptivity[0].toLowerCase() == arrAdaptivity[1].toLowerCase()) {
+        typeAdaptivity[0] = calculator.price[2][1];
+        typeAdaptivity[1] = calculator.days[2][1];
 
-    } else if (a.toLowerCase() == arrAdaptivity[2].toLowerCase()) {
-        typeAdaptivity[0] = calculator.price[1][2];
-        typeAdaptivity[1] = calculator.days[1][2];
+    } else if (typeAdaptivity[0].toLowerCase() == arrAdaptivity[2].toLowerCase()) {
+        typeAdaptivity[0] = calculator.price[2][2];
+        typeAdaptivity[1] = calculator.days[2][2];
         
     } else {
         alert("Вы ввели что-то не то!");
@@ -92,7 +89,7 @@ function getAnswer(typeSite, typeDesign, typeAdaptivity) {
         return;
     }
 
-    calculator.count_price(typeSite, typeDesign, typeAdaptivity);
+    calculator.count(typeSite, typeDesign, typeAdaptivity);
 }
 
 getAnswer();
