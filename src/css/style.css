@@ -213,10 +213,6 @@ main {
     }
 }
 
-.about {
-    height: 720px;
-}
-
 .about h2 {
     font-size: 33px;
     margin: 110px 0 30px;
@@ -258,6 +254,7 @@ main {
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s;
+    margin-bottom: 40px;
 }
 
 .about input:hover {
