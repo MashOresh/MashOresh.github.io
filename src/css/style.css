@@ -240,7 +240,7 @@ main {
 
 .about .btn {
     height: 32px;
-    border: 2px solid;
+    border: 2px solid #2f2167;
     background: none;
     border-radius: 5px;
     color: #2f2167;
@@ -259,7 +259,6 @@ main {
     display: inline-block;
     transform: scale(1.1);
     background-color: #e1d0fb;
-    
 }
 
 .about .btn:active {
