@@ -233,10 +233,6 @@ main {
     opacity: 1;
 }
 
-.about img {
-    margin-bottom: 10px;
-}
-
 .about_text {
     font-size: 18px;
     font-family: Calibri, sans-serif;
@@ -268,16 +264,6 @@ main {
 
 .about .btn:active {
     transform: scale(1.1);
-}
-
-@media (max-width: 570px) {
-    .about h2 {
-        margin-top: 30px;
-    }
-
-    .about hr {
-        margin-top: -20px;
-    }
 }
 
 .skills {
