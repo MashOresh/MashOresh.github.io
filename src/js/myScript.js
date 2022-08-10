@@ -1,34 +1,34 @@
 $(document).ready(function () {
     // Подсветка меню при скролле
-     $(window).scroll(() => {
-         let scrollDistance = $(window).scrollTop();
+    $(window).scroll(() => {
+        let scrollDistance = $(window).scrollTop();
 
-         $('.section').each((i, el) => {
-             if ($(el).offset().top - $('nav').outerHeight() <= scrollDistance) {
-                 $('nav a').each((i, el) => {
-                     if ($(el).hasClass('active')) {
-                         $(el).removeClass('active');
-                     }
-                 });
-                 $('nav li:eq(' + i + ')').find('a').addClass('active');
-             }
-         });
-     });
+        $('.section').each((i, el) => {
+            if ($(el).offset().top - $('nav').outerHeight() <= scrollDistance) {
+                $('nav a').each((i, el) => {
+                    if ($(el).hasClass('active')) {
+                        $(el).removeClass('active');
+                    }
+                });
+                $('nav li:eq(' + i + ')').find('a').addClass('active');
+            }
+        });
+    });
 
-     // Отключение прелоадера
-     $(".preloader").css("display", "none");
+    // Отключение прелоадера
+    $(".preloader").css("display", "none");
 
-     // Калькулятор стоимости
-     function calculate() {
-         let price = parseInt($('#type option:selected').val()) + parseInt($('#design option:selected').val()) + parseInt($('#adapt option:selected').val());
-         let days = parseInt($('#type option:selected').attr('days')) + parseInt($('#design option:selected').attr('days')) + parseInt($('#adapt option:selected').attr('days'));
-         $('.days_digit').text(days);
-         $('.price_digit').text(price);
-     };
-     $("select").on("change", function () {
-         calculate();
-     });
-     calculate();
+    // Калькулятор стоимости
+    function calculate() {
+        let price = parseInt($('#type option:selected').val()) + parseInt($('#design option:selected').val()) + parseInt($('#adapt option:selected').val());
+        let days = parseInt($('#type option:selected').attr('days')) + parseInt($('#design option:selected').attr('days')) + parseInt($('#adapt option:selected').attr('days'));
+        $('.days_digit').text(days);
+        $('.price_digit').text(price);
+    };
+    $("select").on("change", function () {
+        calculate();
+    });
+    calculate();
 
     // "Бегущие" цифры
     const time = 3000;
@@ -59,7 +59,7 @@ $(document).ready(function () {
             }
         });
     });
-    
+
     // Модальное (рекламное) окно
     let flag1 = true;
     if (flag1) {
@@ -72,7 +72,7 @@ $(document).ready(function () {
             });
         }, 15000);
     };
-    
+
     // Картинки в модальном окне
     $(function () {
         $('.image-popup').magnificPopup({
@@ -130,12 +130,13 @@ $(document).ready(function () {
             window.addEventListener("orientationChange", lazyload);
         }
     });
-    
+
     // Заявка
-    if ($('#exampleModal').hasClass('show')){
+    if ($('#exampleModal').hasClass('show')) {
         let type = $('#type option:selected');
         let design = $('#design option:selected');
         let adaptive = $('#adapt option:selected');
         console.log(type);
-    }
+    };
+
 });

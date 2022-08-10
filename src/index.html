@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fotorama.css">
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -92,7 +93,7 @@
                     </div>
                 </div>
 
-                <img class="d-block mx-auto lazy" src="../src/img/foto1.png?tr=h-1,w-1:w-400,h-300" data-src="../src/img/foto1.png?tr=w-400,h-300">
+                <img class="d-block mx-auto lazy" src="../src/img/foto_sm.png?tr=h-1,w-1:w-400,h-300" data-src="../src/img/foto_sm.png?tr=w-400,h-300">
 
                 <div class="row justify-content-center about_text">
                     <div class="col-12 col-sm-11 col-md-9 col-lg-7 text-center text-lg-start">
@@ -102,7 +103,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-6 col-sm-5 col-md-4 col-lg-2 text-center">
-                        <input class="mt-3" type="submit" value="Скачать резюме">
+                        <button class="btn"><i class="fa fa-download" aria-hidden="true">  Скачать резюме</i></button>
                     </div>
                 </div>
             </div>
@@ -154,98 +155,31 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-8 text-center">
-                        <p>Здесь ты можешь посмотреть мои работы</p>
+                        <p>Здесь ты можешь посмотреть мои работы.</p>
                     </div>
                 </div>
 
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class=" mx-auto d-block">
-                                    <a class="image-popup" href="../src/img/case1.png"><img class="lazy" src="../src/img/case1.png?tr=h-1,w-1:w-400,h-300" data-src="../src/img/case1.png?tr=w-400,h-300"></a>
-                                </div>
-                            </div>
-
-                            <div class="case_description px-7">
-                                <div class="row gx-4">
-                                    <div class="col-3 brief">
-                                        <h4>Клиент:</h4>
-                                        <p>Название компании</p>
-                                        <h4>Сайт:</h4>
-                                        <a href="#">https://www.somedomain.ru</a>
-                                    </div>
-                                    <div class="col-9 case_info">
-                                        <h4>Название проекта</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus maxime aspernatur, fugiat modi neque sint temporibus quibusdam, natus inventore adipisci ipsa similique eos dicta expedita vero? Fugit ipsam nemo explicabo, maxime, non magni dolores reiciendis aliquam, dolor unde perspiciatis veritatis.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <input type="button" class="btn btn-secondary btn-lg" value="Перейти на сайт">
+                <div class="fotorama" data-loop="true" data-fit="none" data-width="100%" data-height="100%">
+                    <div class="mx-auto d-block">
+                        <a class="image-popup image-fluid" href="../src/img/case1.png"><img class="lazy" src="../src/img/case1.png?tr=h-1,w-1:w-400,h-300" data-src="../src/img/case1.png?tr=w-400,h-300"></a>
+                        <div class="col-3 brief">
+                            <h4>Клиент:</h4>
+                            <p>Название компании</p>
+                            <h4>Сайт:</h4>
+                            <a href="#">https://www.somedomain.ru</a>
                         </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="rounded mx-auto d-block">
-                                    <a class="image-popup" href="../src/img/case2.png"><img src="../src/img/case2.png"></a>
-                                </div>
-                            </div>
-
-                            <div class="case_description px-7">
-                                <div class="row gx-4">
-                                    <div class="col-3 brief">
-                                        <h4>Клиент:</h4>
-                                        <p>Название компании</p>
-                                        <h4>Сайт:</h4>
-                                        <a href="#">htttps://www.somedomain.ru</a>
-                                    </div>
-                                    <div class="col-9 case_info">
-                                        <h4>Название проекта</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus maxime aspernatur, fugiat modi neque sint temporibus quibusdam, natus inventore adipisci ipsa similique eos dicta expedita vero? Fugit ipsam nemo explicabo, maxime, non magni dolores reiciendis aliquam, dolor unde perspiciatis veritatis.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <input type="button" class="btn btn-secondary btn-lg" value="Перейти на сайт">
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="rounded mx-auto d-block">
-                                    <a class="image-popup" href="../src/img/case3.png"><img src="../src/img/case3.png"></a>
-                                </div>
-                            </div>
-
-                            <div class="case_description px-7">
-                                <div class="row gx-4">
-                                    <div class="col-3 brief">
-                                        <h4>Клиент:</h4>
-                                        <p>Название компании</p>
-                                        <h4>Сайт:</h4>
-                                        <a href="#">htttps://www.somedomain.ru</a>
-                                    </div>
-                                    <div class="col-9 case_info">
-                                        <h4>Название проекта</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus maxime aspernatur, fugiat modi neque sint temporibus quibusdam, natus inventore adipisci ipsa similique eos dicta expedita vero? Fugit ipsam nemo explicabo, maxime, non magni dolores reiciendis aliquam, dolor unde perspiciatis veritatis.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <input type="button" class="btn btn-secondary btn-lg" value="Перейти на сайт">
+                        <div class="col-9 case_info">
+                            <h4>Название проекта</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus maxime aspernatur, fugiat modi neque sint temporibus quibusdam, natus inventore adipisci ipsa similique eos dicta expedita vero? Fugit ipsam nemo explicabo, maxime, non magni dolores reiciendis aliquam, dolor unde perspiciatis veritatis.</p>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="mx-auto d-block">
+                        <a class="image-popup image-fluid " href="../src/img/case2.png"><img class="lazy" src="../src/img/case2.png?tr=h-1,w-1:w-400,h-300" data-src="../src/img/case1.png?tr=w-400,h-300"></a>
+                    </div>
+                    <div class="mx-auto d-block ">
+                        <a class="image-popup image-fluid " href="../src/img/case3.png"><img class="lazy" src="../src/img/case3.png?tr=h-1,w-1:w-400,h-300" data-src="../src/img/case1.png?tr=w-400,h-300"></a>
+                    </div>
                 </div>
-
-
-
-
             </div>
         </section>
 
@@ -333,7 +267,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                       <button type="button" class="btn btn-primary">Отправить</button>
+                                        <button type="button" class="btn btn-primary">Отправить</button>
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
                                     </div>
                                 </div>
@@ -515,17 +449,19 @@
         </section>
 
         <div class="map">
-            <img src="../src/img/map.png" class="img-fluid" alt="">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade6ada6f165e57483ea33b211d189bbae4606ac2338d7ebc45e7b7cfb50b80fe&amp;width=100%25&amp;height=582&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
 
         <footer>
             <p>Copyright &#169; 2021 Мария Орешкина. Designed by Web</p>
         </footer>
 
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/jquery.lazyloadxt.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/fotorama.js"></script>
+        <script src="js/wow.min.js"></script>
         <script src="js/myScript.js"></script>
     </main>
 </body>
