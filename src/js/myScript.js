@@ -61,7 +61,7 @@ $(document).ready(function () {
     });
 
     // Модальное (рекламное) окно
-    let flag1 = true;
+    /*let flag1 = true;
     if (flag1) {
         flag1 = false;
         setTimeout(function () {
@@ -71,13 +71,15 @@ $(document).ready(function () {
                 modalwin.style.display = "none";
             });
         }, 15000);
-    };
+    };*/
 
     // Картинки в модальном окне
-    $(function () {
-        $('.image-popup').magnificPopup({
-            type: 'image'
-        });
+    $('.image-popup').magnificPopup({
+        type: 'image',
+        zoom: {
+            enabled: true,
+            duration: 300
+        }
     });
 
     // Отложенная загрузка
@@ -132,11 +134,33 @@ $(document).ready(function () {
     });
 
     // Заявка
-    if ($('#exampleModal').hasClass('show')) {
-        let type = $('#type option:selected');
-        let design = $('#design option:selected');
-        let adaptive = $('#adapt option:selected');
-        console.log(type);
-    };
-
+    $('.trigger').on('click', function () {
+        $('.modal-wrapper').toggleClass('open');
+        $('.page-wrapper').toggleClass('blur-it');
+        return false;
+    });
+    $('.head').on('click', function () {
+        $('.modal-wrapper').removeClass('open');
+    });
+    $('.form_sub').click(function () {
+        $.ajax({
+            type: "POST", //указываем что метод отправки POST
+            url: "form.php", // указываем адрес обработчика
+            data: $('.form_modal_window').serialize(), //указываем данные которые будут передаваться обработчику
+            /* Мы указываем id формы - $('#callbacks'), и методом serialize() забираем значения всех полей. */
+            error: function () {
+                $("#erconts").html("Произошла ошибка!");
+            },
+            /* если произойдет ошибка в элементе с id erconts выведется сообщение*/
+            beforeSend: function () {
+                $("#erconts").html("<p style='color: orangered;'>Отправляем данные...</p>");
+            },
+            success: function (result) {
+                /* В случае удачной обработки и отправки выполнится следующий код*/
+                $('#erconts').html(result);
+                checkThis();
+            }
+        });
+        return false;
+    });
 });

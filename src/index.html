@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/fotorama.css">
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -103,7 +102,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-6 col-sm-5 col-md-4 col-lg-2 text-center">
-                        <button class="btn"><i class="fa fa-download" aria-hidden="true">  Скачать резюме</i></button>
+                        <button class="btn"><i class="fa fa-download" aria-hidden="true"> Скачать резюме</i></button>
                     </div>
                 </div>
             </div>
@@ -146,7 +145,7 @@
 
         <section class="case section" id="my_cases">
 
-            <div class="case_container container">
+            <div class="case_container container text-center">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-6 col-md-2 text-center">
                         <h2>Кейсы</h2>
@@ -159,26 +158,37 @@
                     </div>
                 </div>
 
-                <div class="fotorama" data-loop="true" data-fit="none" data-width="100%" data-height="100%">
-                    <div class="mx-auto d-block">
-                        <a class="image-popup image-fluid" href="../src/img/case1.png"><img class="lazy" src="../src/img/case1.png?tr=h-1,w-1:w-400,h-300" data-src="../src/img/case1.png?tr=w-400,h-300"></a>
-                        <div class="col-3 brief">
-                            <h4>Клиент:</h4>
-                            <p>Название компании</p>
-                            <h4>Сайт:</h4>
-                            <a href="#">https://www.somedomain.ru</a>
+                <div id="carousel_cases" class="carousel carousel-dark slide container" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <p>
+                                <a class="image-popup" href="../src/img/case1.jpg">
+                                    <img src="../src/img/case1.jpg" alt=""></a>
+                            </p>
+                            <div class="carousel-caption d-none d-md-block caseInner">
+                                <p>Учебный проект.</p>
+                                <a href="#">https://somedomain.ru</a>
+                            </div>
                         </div>
-                        <div class="col-9 case_info">
-                            <h4>Название проекта</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus maxime aspernatur, fugiat modi neque sint temporibus quibusdam, natus inventore adipisci ipsa similique eos dicta expedita vero? Fugit ipsam nemo explicabo, maxime, non magni dolores reiciendis aliquam, dolor unde perspiciatis veritatis.</p>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <p>
+                                <a class="image-popup" href="../src/img/case2.jpg">
+                                    <img src="../src/img/case2.jpg" alt=""></a>
+                            </p>
+                            <div class="carousel-caption d-none d-md-block caseInner">
+                                <p>Учебный проект.</p>
+                                <a href="#">https://somedomain.ru</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mx-auto d-block">
-                        <a class="image-popup image-fluid " href="../src/img/case2.png"><img class="lazy" src="../src/img/case2.png?tr=h-1,w-1:w-400,h-300" data-src="../src/img/case1.png?tr=w-400,h-300"></a>
-                    </div>
-                    <div class="mx-auto d-block ">
-                        <a class="image-popup image-fluid " href="../src/img/case3.png"><img class="lazy" src="../src/img/case3.png?tr=h-1,w-1:w-400,h-300" data-src="../src/img/case1.png?tr=w-400,h-300"></a>
-                    </div>
+                    <button class="carousel-control-prev arrow" type="button" data-bs-target="#carousel_cases" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next arrow" type="button" data-bs-target="#carousel_cases" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -232,43 +242,67 @@
 
                 <div class="row justify-content-center price_btn">
                     <div class="col-6 col-sm-5 col-md-4 col-lg-2 text-center">
-                        <button type="button" class="btn btn-primary btn-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</button>
+                        <!-- Кнопка-триггер модального окна -->
+                        <button type="button" class="price-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</button>
+
+                        <!-- Модальное окно -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Оставить заявку</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                                     </div>
-                                    <div class="modal-body request container">
-                                        <p>Вы выбрали:</p>
-                                        <div class="row">
-                                            <div class="col-2 chosen type">Тип сайта: </div>
-                                            <div class="col-2 offset-7 chosen text">...</div>
-                                            <div class="col-2 chosen design">Дизайн:</div>
-                                            <div class="col-2 offset-7 chosen text">...</div>
-                                            <div class="col-2 chosen adaptive">Адаптивность:</div>
-                                            <div class="col-2 offset-7 chosen text">...</div>
-                                            <div class="col-2 chosen adaptive">Стоимость:</div>
-                                            <div class="col-2 offset-7 chosen text">...</div>
-                                        </div>
-                                        <p class="msg">Оставьте свои контакты и я свяжусь с вами в ближайшее время.</p>
-                                        <div class="form-floating mb-3">
-                                            <input type="name" class="form-control" id="floatingInput" placeholder="Имя">
-                                            <label for="floatingInput">Имя</label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input type="tel" class="form-control" id="floatingInput" placeholder="Телефон">
-                                            <label for="floatingInput">Телефон</label>
-                                        </div>
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com">
-                                            <label for="floatingPassword">Email</label>
-                                        </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="row">
+                                               <p>Оставьте свои контактные данные и я свяжусь с Вами в ближайшее время.</p>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Имя*" aria-label="Имя">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Email*" aria-label="Email">
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <label class="input-group-text" for="modalTypeSite">Тип сайта*</label>
+                                                <select class="form-select" id="modalTypeSite">
+                                                    <option selected>Выберите...</option>
+                                                    <option value="1">Сайт-визитка</option>
+                                                    <option value="2">Корпоративный-сайт</option>
+                                                    <option value="3">Интернет-магазин</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <label class="input-group-text" for="modalDesign">Дизайн*</label>
+                                                <select class="form-select" id="modalDesign">
+                                                    <option selected>Выберите...</option>
+                                                    <option value="1">Шаблонный</option>
+                                                    <option value="2">Уникальный</option>
+                                                    <option value="3">WOW-дизайн</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <label class="input-group-text" for="V">Адаптивность*</label>
+                                                <select class="form-select" id="modalAdapt">
+                                                    <option selected>Выберите...</option>
+                                                    <option value="1">Только ПК</option>
+                                                    <option value="2">Только мобильный</option>
+                                                    <option value="3">ПК+Мобильный</option>
+                                                </select>
+                                            </div>
+                                            <br>
+                                            <p>При необходимости прикрепите макет или референс и опишите Вашу идею более детально. </p>
+                                            <div class="input-group mb-3">
+                                                <input type="file" class="form-control" id="inputGroupFile01">
+                                            </div>
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Комментарии к заказу" id="modalMsg" style="height:100px"></textarea>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-primary">Отправить</button>
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
                                     </div>
                                 </div>
                             </div>
@@ -449,19 +483,19 @@
         </section>
 
         <div class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade6ada6f165e57483ea33b211d189bbae4606ac2338d7ebc45e7b7cfb50b80fe&amp;width=100%25&amp;height=582&amp;lang=ru_RU&amp;scroll=false"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade6ada6f165e57483ea33b211d189bbae4606ac2338d7ebc45e7b7cfb50b80fe&amp;width=100%25&amp;height=366&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
 
         <footer>
             <p>Copyright &#169; 2022 Мария Орешкина. Designed by Web</p>
         </footer>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
+
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/jquery.maskedinput.min.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/fotorama.js"></script>
         <script src="js/wow.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/myScript.js"></script>
     </main>
 </body>
